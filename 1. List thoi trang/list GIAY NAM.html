@@ -1,0 +1,712 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Little Whale Shop</title>
+<!-- InstanceEndEditable -->
+<link href="../imgs/simple.png" rel="shortcut icon" TYPE="IMAGE/X-ICON"/>
+<link href="../CSS/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../CSS/main.css" rel="stylesheet" type="text/css">
+<link href="../CSS/all.min.css" rel="stylesheet" type="text/css">
+
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<header id="header">
+	<!--nav-->
+	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+	  <div class="container">
+		<a class="navbar-brand mr-5 p-0" href="../index.html" id="logo"><img src="../imgs/LOGO.png" alt="logo"></a>
+		  
+		  <!-- ----icon------->
+		  <div class="d-lg-none d-block d-md-block w-25 ml-md-auto">
+		  <ul class="d-flex pt-2" id="icon">
+      <li class="dropdown"> <!--search-->
+        <a class="dropdown-toggle p-0" href="#" id="navbardrop" data-toggle="dropdown">
+			<img src="../imgs/icon1.png" class="icon">
+        </a>
+		<div class="dropdown-menu dropdown-menu-right-50">
+		  <div class="search-container">
+			<form action="/action_page.php">
+			  <input type="text" placeholder="Tìm kiếm.." name="search">
+<!--			  <button type="submit"><i class="fa fa-search"></i></button>-->
+			</form>
+		  </div>
+		</div>
+      </li>
+      <li class="pl-md-4 pl-2"> <!--giỏ hàng-->
+        <a class="p-0" href="../5.gio%20hang/gio%20hang%20trong.html">
+			<img src="../imgs/icon2.png" class="icon">
+        </a>
+      </li>
+		<li class="pl-md-4 pl-2"> <!--đăng nhập-->
+        <a class="p-0" href="../4.%20Lien%20he/login.html">
+			<img src="../imgs/icon3.png" class="icon">
+        </a>
+      </li>
+    </ul>
+	</div>
+		  <!------end icon------->
+		  
+		<button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			  <ul class="navbar-nav">
+					<li class="nav-item mr-4">
+						<a class="nav-link" href="../index.html">TRANG CHỦ</a>
+					</li>
+					<li class="nav-item dropdown mr-4">
+						<a class="nav-link dropdown-toggle" href="list%20thoi%20trang.html" id="navbardrop" data-toggle="dropdown">THỜI TRANG</a>
+						<div class="dropdown-menu">
+							<div class="d-flex">
+								<div class="p-0">
+									<a class="dropdown-item f-baloo t-gray" href="list%20thoi%20trang.html" style="font-size: 16px; padding-left: 1em">Thời trang bé gái</a>
+									<a class="dropdown-item" href="list%20AO%20NU.html">Áo</a>
+									<a class="dropdown-item" href="list%20QUAN%20NU.html">Quần</a>
+									<a class="dropdown-item" href="list%20VAY%20NU.html">Váy</a>
+									<a class="dropdown-item" href="list%20GIAY%20NU.html">Giày dép</a>
+									<a class="dropdown-item f-baloo t-gray d-lg-none d-md-none d-block" href="list%20SO%20SINH.html" style="font-size: 16px; padding-left: 1em">Sơ sinh</a>
+								</div>
+
+								<div class="p-0">
+									<a class="dropdown-item f-baloo t-gray" href="list%20thoi%20trang%20NAM.html" style="font-size: 16px; padding-left: 1em">Thời trang bé trai</a>
+									<a class="dropdown-item" href="list%20AO%20NAM.html">Áo</a>
+									<a class="dropdown-item" href="list%20QUAN%20NAM.html">Quần</a>
+									<a class="dropdown-item" href="list%20GIAY%20NAM.html">Giày dép</a>
+								</div>
+
+								<div class="p-0 d-md-block d-none d-lg-block">
+									<a class="dropdown-item f-baloo t-gray" href="list%20SO%20SINH.html" style="font-size: 16px; padding-left: 1em">Sơ sinh</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown mr-4">
+						<a class="nav-link dropdown-toggle" href="../2.%20Do%20choi/Do%20choi.html" id="navbardrop" data-toggle="dropdown">ĐỒ CHƠI</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="list%20Do%20choi%20Nu.html">Đồ chơi bé gái</a>
+							<a class="dropdown-item" href="list%20Do%20choi%20Nam.html">Đồ chơi bé trai</a>
+							<a class="dropdown-item" href="list%20Do%20choi%20So%20sinh.html">Đồ chơi sơ sinh</a>
+						</div>
+					</li>
+					<li class="nav-item mr-4">
+						<a class="nav-link" href="../3.%20Blog/blog.html">BLOG</a>
+					</li>
+					<li class="nav-item mr-4">
+						<a class="nav-link" href="../4.%20Lien%20he/lien%20he.html">LIÊN HỆ</a>
+					</li>
+				</ul>
+				<!--  end menu-->
+		</div> <!--collapse navbar-collapse--> 
+		 <!-- ----icon------->
+		  <div class="d-none d-md-none d-lg-block">
+		  <ul class="d-flex" id="icon">
+      <li class="dropdown"> <!--search-->
+        <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			<img src="../imgs/icon1.png"
+        </a>
+		<div class="dropdown-menu dropdown-menu-right-50">
+		  <div class="search-container">
+			<form action="/action_page.php">
+			  <input type="text" placeholder="Tìm kiếm.." name="search">
+<!--			  <button type="submit"><i class="fa fa-search"></i></button>-->
+			</form>
+		  </div>
+		</div>
+      </li>
+      <li class="pl-lg-4"> <!--giỏ hàng-->
+        <a class="" href="../5.gio%20hang/gio%20hang%20trong.html">
+			<img src="../imgs/icon2.png">
+        </a>
+      </li>
+		<li class="pl-lg-4"> <!--đăng nhập-->
+        <a class="" href="../4.%20Lien%20he/login.html">
+			<img src="../imgs/icon3.png">
+        </a>
+      </li>
+    </ul>
+	</div>
+		  <!------end icon------->
+	  </div> <!--end container-->
+	</nav>
+</header>
+	<!--chat-->
+	<section id="chat">
+	<div class="open-button" onclick="openForm()"></div>
+
+<div class="form-popup shadow" id="myForm">
+	<div class="d-flex bg-blue pl-3" style="height:45px;box-shadow:0 3px 5px rgba(0, 0, 0, 0.2)" id="cancel">
+		<div class="pt-1"><img src="../imgs/LOGO.png" alt="logo" style="height: 35px"></div>
+		<div class="pt-3 pl-4"><h6>Tư vấn khách hàng</h6></div>
+		<div class="pt-2 pl-4"><button type="button" onclick="closeForm()" style="width:30px; height: 30px; padding:0; margin:0">&times;</button></div>
+	</div>
+  <form action="/action_page.php" class="form-container">
+    <input type="text" id="name" name="name" class="input-block-level" placeholder="Họ tên">
+    <input type="text" id="sdt" name="name" class="input-block-level" placeholder="Số điện thoại">
+	<input type="email" id="email" name="email" class="input-block-level" placeholder="Email">
+	 <textarea rows="3" id="description" name="description" class="input-block-level" placeholder="Lời nhắn"></textarea>
+	 <button type="submit" class="btn btn-info mt-3">GỬI</button>
+  </form>
+</div>
+	</section>
+	<!--chat-->
+<!------main-------><!-- InstanceBeginEditable name="nd" -->
+<main>
+	<div id="banner">
+		<div class="tieude container">
+		<h4>Thời trang</h4>
+			<ul class="nav">
+				<li class="nav-item">
+				  <a class="nav-link" href="../index.html">Trang chủ ></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="list thoi trang NAM.html">Thời trang bé trai ></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link disabled" href="#">Giày dép</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<div class="container mt-5">
+	<div class="row">
+<!------aside------->
+		<div class="col-lg-3 d-md-none d-none d-lg-block p-2" id="left">
+			<div class="khung p-3">
+			<h5>DANH MỤC SẢN PHẨM</h5>
+			<hr>
+			<ul class="pl-3">
+				<li><a href="list thoi trang.html">Thời trang bé gái</a>
+					<ul>
+						<li><a href="list AO NU.html">Áo</a></li>
+						<li><a href="list QUAN NU.html">Quần</a></li>
+						<li><a href="list VAY NU.html">Váy</a></li>
+						<li><a href="list GIAY NU.html">Giày dép</a></li>
+					</ul>
+				</li>
+				<li><a href="list thoi trang NAM.html">Thời trang bé trai</a>
+					<ul>
+						<li><a href="list AO NAM.html">Áo</a></li>
+						<li><a href="list QUAN NAM.html">Quần</a></li>
+						<li><a href="list GIAY NAM.html" class="active">Giày dép</a></li>
+					</ul>
+				</li>
+				<li><a href="list SO SINH.html">Sơ sinh</a></li>
+			</ul>
+			</div><!--end danh muc sp-->
+			<h5 class="mt-5 mb-3">CÓ THỂ BẠN QUAN TÂM</h5>
+			<div class="d-flex mb-3">
+				<div class="p-1"><a href="ao-len-nam-1.html"><img src="imgs/G-ao1.jpg" class="rounded-circle img-fluid img-like border1"></a></div>
+						<div class="p-1 align-self-center">
+							<h6><a href="ao-len-nam-1.html">Áo Len Nhiều Màu</a></h6>
+							<span class="fa fa-star t-yellow"></span>
+							<span class="fa fa-star t-yellow"></span>
+							<span class="fa fa-star t-yellow"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<h5 class="t-logo">179.000 vnđ</h5>
+						</div>
+			</div> <!--sản phẩm 1-->
+			<div class="d-flex mb-3">
+				<div class="p-1"><a href="G-vay1.html"><img src="imgs/G-vay1.jpg" class="rounded-circle img-fluid img-like border1"></a></div>
+				<div class="p-1 align-self-center">
+					<h6><a href="G-vay1.html">Đầm Công Chúa Cho Bé</a></h6>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<h5 class="t-logo">250.000 vnđ</h5>
+				</div>
+			</div> <!--sản phẩm 1-->
+			<div class="d-flex mb-3">
+				<div class="p-1"><a href="G-ao2.html"><img src="imgs/G-ao2.jpg" class="rounded-circle img-fluid img-like border1"></a></div>
+				<div class="p-1 align-self-center">
+					<h6><a href="G-ao2.html">Áo Khoác Trẻ Em Cao Cấp</a></h6>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<h5 class="t-logo">280.000 vnđ</h5>
+				</div>
+			</div> <!--sản phẩm 1-->
+			<div class="d-flex mb-3">
+				<div class="p-1"><a href="G-giay1.html"><img src="imgs/G-giay1a.jpg" class="rounded-circle img-fluid img-like border1"></a></div>
+				<div class="p-1 align-self-center">
+					<h6><a href="G-giay1.html">Giày bốt bé gái BY16</a></h6>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star t-yellow"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<h5 class="t-logo">149.000 vnđ</h5>
+				</div>
+			</div> <!--sản phẩm 1-->
+			<img src="imgs/banner-aside1.jpg" class="img-fluid mt-5">
+		</div>
+<!--end aside-->
+		
+		<!--12 sản phẩm-->
+		<div class="col-12 col-md-12 col-lg-9 mt-2"> 
+			<!--bộ lọc sản phẩm-->
+			<div class="row">
+				<div class="col-md-4 col-6 d-lg-none d-md-block d-block">
+					<div class="dropdown" id="btn-dmsp">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				  Danh mục
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item pl-2 pl-md-3" href="#">Thời trang bé gái</a>
+					<a class="dropdown-item pl-3 pl-md-4 pl-4" href="#">Áo</a>
+					<a class="dropdown-item pl-3 pl-md-4" href="#">Quần</a>
+					<a class="dropdown-item pl-3 pl-md-4" href="#">Váy</a>
+					<a class="dropdown-item pl-3 pl-md-4" href="#">Giày dép</a>
+					
+					<a class="dropdown-item pl-2 pl-md-3" href="#">Thời trang bé trai</a>
+					<a class="dropdown-item pl-3 pl-md-4" href="#">Áo</a>
+					<a class="dropdown-item pl-3 pl-md-4" href="#">Quần</a>
+					<a class="dropdown-item pl-3 pl-md-4" href="#">Giày dép</a>
+					<a class="dropdown-item pl-2 pl-md-3" href="#">Sơ sinh</a>
+				</div>
+			</div> <!--end button danh mục sp-->
+					
+				</div>
+				<div class="col-md-4 col-6 col-lg-2">
+					<div class="dropdown" id="loc-sp">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				  Mặc định
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Mặc định</a>
+					<a class="dropdown-item" href="#">Mua nhiều</a>
+					<a class="dropdown-item" href="#">Đánh giá cao</a>
+					<a class="dropdown-item" href="#">Sản phẩm mới</a>
+					<a class="dropdown-item" href="#">Giá giảm dần</a>
+					<a class="dropdown-item" href="#">Giá tăng dần</a>
+				</div>
+			</div>
+				</div>
+			</div>
+		<!--end bộ lọc sản phẩm-->
+			
+    <div class="row mt-5">
+        <div class="col-md-4 col-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="ao-len-nam-1.html">
+                        <img class="pic-1" src="imgs/B-giay1.jpg">
+                        <img class="pic-2" src="iimgs/B-giay1a.jpg">
+                    </a>
+                    <div class="mua-ngay d-none d-md-none d-lg-block">
+						<a class="add-to-cart" href="ao-len-nam-1.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-none d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="ao-len-nam-1.html">Áo len nhiều màu</a></h3>
+                    <div class="price f-baloo">
+                        179.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-vay1.html">
+                        <img class="pic-1" src="imgs/B-giay2.jpg">
+                        <img class="pic-2" src="iimgs/B-giay2a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-vay1.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-vay1.html">Đầm công chúa cho bé</a></h3>
+                    <div class="price">
+                        250.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-vay2.html">
+                        <img class="pic-1" src="imgs/B-giay3.jpg">
+                        <img class="pic-2" src="imgs/B-giay3a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-vay2.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-vay2.html">ĐẦM GẤU MOSCHINO</a></h3>
+                    <div class="price">
+                        130.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-ao2.html">
+                        <img class="pic-1" src="imgs/B-giay4.jpg">
+                        <img class="pic-2" src="imgs/B-giay4a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-ao2.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-ao2.html">Áo khoác trẻ em cao cấp</a></h3>
+                    <div class="price">
+                        280.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-vay3.html">
+                        <img class="pic-1" src="imgs/B-giay5.jpg">
+                        <img class="pic-2" src="imgs/B-giay5a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-vay3.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-vay3.html">Set chân váy và áo</a></h3>
+                    <div class="price">
+                        300.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-giay1.html">
+                        <img class="pic-1" src="imgs/B-giay6.jpg">
+                        <img class="pic-2" src="imgs/B-giay6a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-giay1.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-giay1.html">Giày bốt bé gái BY16</a></h3>
+                    <div class="price">
+                        149.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-giay2.html">
+                        <img class="pic-1" src="imgs/B-giay7.jpg">
+                        <img class="pic-2" src="imgs/B-giay7a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-giay2.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-giay2.html">Giày Búp Bê Bé Gái Biti's</a></h3>
+                    <div class="price">
+                        281.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-giay3.html">
+                        <img class="pic-1" src="imgs/B-giay8.jpg">
+                        <img class="pic-2" src="imgs/B-giay8a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-giay3.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-giay3.html">Giày Búp Bê Bé Gái Biti's Hồng</a></h3>
+                    <div class="price">
+                        202.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-giay4.html">
+                        <img class="pic-1" src="imgs/B-giay9.jpg">
+                        <img class="pic-2" src="imgs/B-giay9a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-giay4.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-giay4.html">Giày Búp Bê Bé Gái Biti's Đỏ</a></h3>
+                    <div class="price">
+                        202.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-giay5.html">
+                        <img class="pic-1" src="imgs/B-giay10.jpg">
+                        <img class="pic-2" src="imgs/B-giay10a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-giay5.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-giay5.html">Giày Búp Bê Bé Gái Biti's</a></h3>
+                    <div class="price">
+                        202.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-vay4.html">
+                        <img class="pic-1" src="imgs/B-giay11.jpg">
+                        <img class="pic-2" src="imgs/B-giay11a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-vay4.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-vay4.html">Đầm công chúa màu kem</a></h3>
+                    <div class="price">
+                        250.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-6 mt-lg-3">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="G-vay5.html">
+                        <img class="pic-1" src="imgs/B-giay12.jpg">
+                        <img class="pic-2" src="imgs/B-giay12a.jpg">
+                    </a>
+                    <div class="mua-ngay">
+						<a class="add-to-cart" href="G-vay5.html">MUA NGAY</a>
+                    </div>
+					<!--icon-->
+					<ul class="social d-none d-md-block d-lg-block">
+                        <li><a href="#" data-tip="Xem nhanh"><i class="fas fa-eye"></i></i></a></li>
+                        <li><a href="#" data-tip="Yêu thích"><i class="fas fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Thêm vào giỏ"><i class="fas fa-cart-plus"></i></i></a></li>
+                    </ul>
+					<!--icon-->
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="G-vay5.html">Đầm công chúa màu hồng</a></h3>
+                    <div class="price">
+                        250.000đ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--end row-->
+<!--page next-->
+<hr class="t-blue">
+
+<!--page next-->
+<div class="pagination d-flex justify-content-end">
+  <a href="#">&laquo;</a>
+  <a class="active" href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+</div>
+
+		</div> <!--end list 12 sản phẩm-->
+	</div>
+</div> <!--end container-->
+</main>
+<!-- InstanceEndEditable --><!-----fotter----->
+	<div class="song p-0 m-0" id="songdap">
+		<!--<img style="width: 100%" src="imgs/song-.png">-->
+	</div>
+	<!--sóng biển-->
+<footer id="footer">
+<div class="container">
+	<div class="row text-center">
+	  <div class="col-md-12 mt-5 col-lg-4 border-bottom border-success border-bottom-lg-0">
+			<h5>Về Little Whale</h5>
+			<div class="row p-0">
+			  <div class="col-5 col-md-5 p-0">
+				  <ul class="text-right p-0 pr-3" style="list-style: none;">
+					  <li><a href="#">Giới thiệu</a></li>
+					  <li><a href="#">Tuyển Dụng</a></li>
+					  <li><a href="#">Tư Vấn</a></li>
+				  </ul>
+			  </div>
+			  <div class="col-7 col-md-7 p-0">
+				  <ul class="text-left p-0" style="list-style: none;">
+					  <li><a href="#">Hướng dẫn đặt hàng</a></li>
+					  <li><a href="#">Phương thức vận chuyển</a></li>
+					  <li><a href="#">Chính sách đổi trả</a></li>
+				  </ul>
+			  </div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-12 border-bottom border-success border-bottom-lg-0 py-3 py-md-2 py-lg-0">
+			<img src="../imgs/LOGO.png" alt="logo" height="70px" width="auto">
+			<p class="mt-2">778 Nguyễn Kiệm, quận Phú Nhuận, TP.HCM<br>
+				Tel: 1800 6325<br>
+				Email: littlewhale.com</p>
+		</div>
+		<div class="col-lg-4 col-12 mt-lg-5 mt-2 pb-5">
+			<h5>Thời gian mở cửa</h5>
+			<p>Từ 8h đến 20h các ngày trong tuần</p>
+			<h6>Liên hệ với chúng tôi</h6>
+			<p><a href="#"><img class="pr-4" src="../imgs/facebook%201.png"></a>
+			<a href="#"><img class="pr-4" src="../imgs/instagram%201.png"></a>
+		<a href="#"><img src="../imgs/twitter%201.png"></a></p>
+		</div>
+	</div>
+	<!--social icon-->
+	<div class="row text-center">
+		<div class="col-12">
+			
+		</div>
+	</div>
+</div>
+</footer>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/main-js.js"></script>
+	<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../js/wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+
+</body>
+<!-- InstanceEnd --></html>

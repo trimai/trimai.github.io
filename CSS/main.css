@@ -1,0 +1,602 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
+@import url(produce.css);
+@import url(detail.css);
+@import url(animate.css);
+@import url(owl.carousel.css);
+@import url(owl.theme.default.css);
+@import url(shopping-cart.css);
+/*
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Baloo', cursive;
+color logo: #5CB1E3
+*/
+/*thư viện*/
+.t-blue {color:#A2EBE6} /*rgba(162, 235, 230, 1)*/
+.bg-blue {background-color:#A2EBE6}
+.bg-pink {background-color:#FF8C93}
+.red {color: red}
+.t-pink {color:#FF8C93}
+.t-yellow {color:#FFD600}
+.t-gray {color: #666}
+.t-gray2 {color: #ccc; line-height: 1.2em}
+.t-logo {color:#5CB1E3}
+.f-baloo {font-family: 'Baloo', cursive;}
+.f-mont {font-family: 'Montserrat Alternates', sans-serif;}
+.bg-gray {background-color: #e2e2e2}
+h1,h2,h3,h4,h5,h6 {font-family: 'Baloo', cursive;}
+.border-bot {
+	border-bottom:solid 1px #A2EBE6;}
+.border-top-bot {
+	border-bottom:solid 1px #A2EBE6; padding-bottom: 20px;
+	border-top:solid 1px #A2EBE6; padding-top: 20px
+}
+.border1 {
+  border: 2px solid #dee2e6;
+}
+.bachtuoc {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2900px;
+	left: 30px;
+	z-index: -100
+}
+.bachtuoc1 {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2800px;
+	right: 30px;
+	z-index: -100
+}
+.buom {
+	position: absolute;
+	background-image:url(../imgs/buom.png); background-repeat: no-repeat; background-size: cover; width: 110px;
+	height: 90px;
+	top:0px;
+	right: 30px;
+}
+.bachtuoc2 {
+	position: absolute;
+	background-image:url(../imgs/bachtuoc1.png); background-repeat: no-repeat; background-size: cover; width: 110px;
+	height: 126px;
+	top:0px;
+	left: 0px;
+	z-index: 30
+}
+@media (max-width: 576px) {
+	.bachtuoc {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2900px;
+	left: 80px;
+	z-index: -10
+}
+.bachtuoc1 {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2800px;
+	right: 30px;
+	z-index: -10
+}
+	.buom {
+	position: absolute;
+	background-image:url(../imgs/buom.png); background-repeat: no-repeat; background-size: cover; width: 90px;
+	height: 70px;
+	top:50px;
+	right: 50px;
+}
+	.bachtuoc2 {
+	position: absolute;
+	background-image:url(../imgs/bachtuoc1.png); background-repeat: no-repeat; background-size: cover; width: 49px;
+	height: 58px;
+	top:50px;
+	left: 0px;
+	z-index: 30
+}
+}
+
+@media (min-width:  576px) {
+	.bachtuoc {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2000px;
+	left: 80px;
+	z-index: -10
+}
+	.bachtuoc1 {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2000px;
+	right: 30px;
+	z-index: -10
+}
+	.buom {
+	position: absolute;
+	background-image:url(../imgs/buom.png); background-repeat: no-repeat; background-size: cover; width: 90px;
+	height: 70px;
+	top:10px;
+	right: 50px;
+}
+	.bachtuoc2 {
+	position: absolute;
+	background-image:url(../imgs/bachtuoc1.png); background-repeat: no-repeat; background-size: cover; width: 104px;
+	height: 119px;
+	top:0px;
+	left: 0px;
+	z-index: 30
+}
+}
+@media (min-width: 992px) {
+.bachtuoc {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2900px;
+	left: 30px;
+	z-index: -100
+}
+.bachtuoc1 {
+	position: absolute;
+	background-image: url(../imgs/bachtuoc.png); background-repeat: no-repeat; background-size: cover; width: 174px;
+	height: 420px;
+	top:2800px;
+	right: 30px;
+	z-index: -100
+}
+}
+/*style chung*/
+* {
+  box-sizing: border-box;
+}
+.w-30 {width: 30%}
+.w-40 {width: 40%}
+.w-45 {width: 45%}
+.w-66 {width: 66.6667%}
+.w-90 {width: 90%}
+body {
+  background: #fff;
+  margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size:16px;
+	line-height: 1.8em;
+  color:#666;
+}
+
+/*-----------chat----------------*/
+#chat {position: fixed;z-index: 100}
+.open-button {
+	background-image: url(../imgs/chat.png); background-repeat: no-repeat; width: 60px; height: 60px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  overflow-x: hidden;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Add a red background color to the cancel button */
+#cancel button{
+  background-color: #A2EBE6; width: 10px;
+	border: none; font-size: 50px; color: #666;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#myForm {width: 300px; border-radius:3px}
+#myForm .input-block-level {width: 100%; margin-top: 15px; padding: 10px;}
+#myForm input,#myForm textarea {border:1px solid #A2EBE6; boder border-radius: 3px}
+#myForm button {width: 100%; height: 40px}
+/*--------------end chat------------------*/
+
+hr {
+	border: solid 1px #A2EBE6;
+	margin:auto;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+/*.........style of Header........*/
+#logo img {height: 65px}
+@media (max-width: 576px) {
+	#logo img {height: 35px}
+}
+
+@media (max-width: 768px) {
+	#logo img {height: 45px}
+}
+.navbar {background-color: #A2EBE6!important;}
+.dropdown-menu {background-color: #A2EBE6}
+.dropdown:hover .dropdown-menu {display: block;}
+.nav-link {font-family: 'Baloo', cursive; font-size:16px}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+/*search*/
+#icon ul {list-style: none; padding: 0; margin: 0}
+#icon li {list-style: none; margin: 0px}
+.icon {width: 40px; height: 40px}
+@media (max-width: 576px) {
+.icon {width: 28px; height: 28px}
+}
+@media (min-width: 768px) {
+.icon {width: 40px; height: 40px}
+}
+#icon .dropdown-toggle:after {
+    display: none;
+}
+#icon .dropdown-menu {padding-bottom: 0px;padding-top: 0px; margin-top: 4px; border-top: 3px solid #76DCD5}
+#icon input[type=text] {
+  padding: 6px;
+  margin-top: 0px;
+  font-size: 17px;
+}
+
+#icon .search-container button {
+  padding: 2px 7px;
+  margin-top: 0px;
+  margin-right: 0px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+#icon .search-container input {border: none; background-color:#E9FFFD}
+
+@media screen and (max-width: 600px) {
+  #icon .search-container {
+    float: none;
+  }
+  #icon a, #icon input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  #icon input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+/*.........style of Main........*/
+main {min-height: 900px}
+/*trang HOME*/
+#ho-tro .tab-content {
+	border: dotted 3px rgba(162, 235, 230, .5); height: 250px;
+}
+#ho-tro .tab-content:hover {
+	border: dotted 3px rgba(162, 235, 230, 1);
+}
+
+#about {
+	position: relative;
+}
+.ani{
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.infinite{animation-iteration-count: infinite;
+}
+#about .bg-about {background-image: url(../imgs/bg-ca-heo.png); background-repeat: no-repeat; background-size:contain; width: 100%; height: 580px;}
+#about .text {
+	position: absolute; top: 230px; left: 60px;
+	background-color: #A2EBE6;
+	padding: 25px;
+	font-size: 16px; line-height: 1.8em;
+	border-radius: 5px;
+}
+#about .img{
+	position: absolute; top: 190px; right: 160px
+}
+@media (max-width: 768px) {
+	#about .bg-about {background-image: url(../imgs/bg-ca-heo.png); background-repeat: no-repeat; background-size:contain; width: 100%; height: 400px;}
+	#about .text {
+	position: absolute; top: 90px; left: 2px;
+	background-color: #A2EBE6;
+	padding: 15px;
+	font-size: 14px;
+	line-height: 1.4em;
+	border-radius: 5px;
+}
+	#about .img{
+	position: absolute; top: 200px; right: 0px
+}
+}
+
+@media (min-width: 768px) {
+	#about .bg-about {background-image: url(../imgs/bg-ca-heo.png); background-repeat: no-repeat; background-size:contain; width: 100%; height: 350px;}
+	#about .text {
+	position: absolute; top: 130px; left: 15px;
+	background-color: #A2EBE6;
+	padding: 15px;
+	font-size: 14px;
+	line-height: 1.4em;
+	border-radius: 5px;
+}
+	#about .img{
+	position: absolute; top: 110px; right: 15px
+}
+}
+@media (min-width: 992px) {
+	#about .bg-about {background-image: url(../imgs/bg-ca-heo.png); background-repeat: no-repeat; background-size:contain; width: 100%; height: 580px;}
+	#about .text {
+		position: absolute; top: 190px; left: 40px;
+		background-color: #A2EBE6;
+		padding: 15px;
+		font-size: 15px; line-height: 1.8em;
+		border-radius: 5px;
+	}
+	#about .img{
+		position: absolute; top: 180px; right: 140px
+	}
+}
+@media (min-width: 1200px) {
+	#about .bg-about {background-image: url(../imgs/bg-ca-heo.png); background-repeat: no-repeat; background-size:contain; width: 100%; height: 580px;}
+	#about .text {
+		position: absolute; top: 230px; left: 60px;
+		background-color: #A2EBE6;
+		padding: 25px;
+		font-size: 16px; line-height: 1.8em;
+		border-radius: 5px;
+	}
+	#about .img{
+		position: absolute; top: 190px; right: 160px
+	}
+}
+
+#danh-muc h5 {margin-top: 2rem;}
+#danh-muc a {color: #666;}
+#danh-muc a:hover {color: #5CB1E3; text-decoration: none}
+#danh-muc a img:hover {transform:scale(1.1);transition: all 1s}
+
+#home-blog.img-hover {position: relative;}
+#home-blog .img-fluid {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+#home-blog .overlay {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	bottom: 30px;
+	left: 25px;
+	right: 30px;
+}
+#home-blog .img-hover:hover .overlay {
+  opacity: 1;
+}
+#home-blog .img-hover:hover .img-fluid {
+  opacity: .3; transition: all .8s
+}
+#home-blog .text {
+	color:#666;
+	font-family: 'Baloo', cursive;
+	font-size: 18px;
+	line-height: 1.2em;
+}
+#sp-noi-bat h6 {line-height: 1.6em}
+#sp-noi-bat span {font-size: 20px; color: #5CB1E3}
+/*sp-yeu-thich*/
+#sp-yeu-thich h6 a{color: #666}
+#sp-yeu-thich h6 a:hover {color: #5CB1E3; text-decoration: none}
+.img-like {width: 105px; height: auto}
+
+#bst {position: relative}
+
+/*----------Trang list sản phẩm---------------*/
+/*banner*/
+#banner { background-color: #FFC6B5; width: 100%; height: 270px;}
+#banner .tieude {padding-top: 140px;}
+#banner .tieude h4 {font-size: 30px; color: white}
+#banner .nav-link {padding-top:0; padding-bottom: 0; padding-left: 0; color: #fff}
+#banner .nav-link.disabled {color: #666}
+#banner .nav-link:hover{color: #666}
+
+@media (max-width: 576px) {
+	#banner {width: 100%; height: 210px}
+	#banner .tieude {padding-top: 120px;}
+	#banner .tieude h4 {font-size: 24px; color: white}
+}
+@media (min-width: 768px) {
+	#banner {width: 100%; height: 270px}
+	#banner .tieude {padding-top: 160px;}
+}
+
+@media (max-width: 992px) {
+
+}
+
+/*danh muc sp aSide*/
+#left a{color: #666}
+#left .active {color:#5CB1E3}
+#left a:hover {text-decoration: none; color:#5CB1E3}
+.khung {border: solid 1px #A2EBE6 }
+
+#loc-sp .dropdown-menu{
+	background-color: #fff;
+	width: 210px;
+	border: solid 1px #A2EBE6
+}
+/*#loc-sp .dropdown-item,#btn-dmsp .dropdown-item {padding: 5px}*/
+#loc-sp .dropdown-item:hover, .dropdown-item:focus{
+  color: #666;
+  text-decoration: none;
+	background-color: #A2EBE6
+}
+#btn-dmsp .dropdown-menu{
+	background-color: #fff;
+	width: 210px;
+	border: solid 1px #A2EBE6
+}
+#btn-dmsp .dropdown-item:hover, .dropdown-item:focus{
+  color: #666;
+  text-decoration: none;
+	background-color: #A2EBE6
+}
+#loc-sp button{width: 210px}
+#btn-dmsp button {width: 210px;background-color: #A2EBE6}
+
+@media (max-width: 576px) {
+	#loc-sp button{width: 160px}
+	#btn-dmsp button {width: 160px}
+	#loc-sp .dropdown-menu{
+	background-color: #fff;
+	width: 160px;
+	border: solid 1px #A2EBE6
+}
+	#btn-dmsp .dropdown-menu{
+	background-color: #fff;
+	width: 160px;
+	border: solid 1px #A2EBE6
+}
+}
+
+@media (min-width: 768px) {
+	#loc-sp button{width: 210px}
+	#btn-dmsp button {width: 210px}
+}
+/*end danh muc sp*/
+/*--------123 page------*/
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #666;
+  float: left;
+  padding: 4px 14px;
+  text-decoration: none;
+  border-radius:50%;
+  margin-left: 8px;
+}
+.pagination a.active {
+  background-color: #A2EBE6;
+  color: #666;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/*--------123 page------*/
+/*end list sp*/
+
+/* Đăng ký, đăng nhập Animation webkit */
+.bg-song {
+	background-image:url(../imgs/bg-song.jpg);background-size: cover; width: 100%; min-height: 880px;
+	position: relative;
+	z-index: 20;
+}
+/*end Đăng ký, đăng nhập*/
+/*blog*/
+#blog h5 a,#blog1 h5 a {color: #666}
+#blog h5 a:hover,#blog1 h5 a:hover {color: #5CB1E3; text-decoration: none}
+.blog {height: 575px}
+#blog .blog:hover {box-shadow:3px 10px 15px rgba(0, 0, 0, 0.2) ; transition: all .7s}
+#blog .time,#blog1 .time {background-color: #FF8C93; color: white; font-size: 14px; padding: 3px 7px 3px 7px; border-radius: 3px}
+#blog .view,#blog1 .view {color:#8F8F8F; font-size: 14px;}
+#tag .tag{background-color:#D4D4D4; padding: 2px 3px 2px 2px; border-radius: 5px; margin-right: 10px; margin-top: 7px}
+#tag a {color: #666;}
+#tag .tag:hover {background-color:#BBBBBB}
+#tag a:hover {text-decoration: none}
+#blog-cmt textarea{
+	border-radius: 5px; width: 100%
+}
+#blog-cmt button {width: 185px; height: 45px;}
+@media (max-width: 576px) {
+	#blog-cmt button {width: 100px; height: 30px;}
+}
+
+@media (min-width: 768px) {
+
+}
+/*end*/
+#thanhtoan
+
+
+/*lIên hệ*/
+.contact {width: 100%; margin-top: 25px; padding: 10px;}
+#contact input,#contact textarea {
+	border:1px solid #A2EBE6;
+	border-radius: 3px;
+	width: 100%;
+	margin-top: 25px; padding: 10px;
+}
+#contact button {width: 254px; height: 40px}
+
+ {width: 100%}
+.map {width: 100%; height: 400px}
+@media (max-width: 576px) {
+.map {width: 100%; height: 220px}
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+
+/*.........style of Footer........*/
+#songdap{ background-image:url(../imgs/song-.png); background-repeat: no-repeat; background-size: cover; width: 100%; height: 320px;}
+.song{
+  position: relative;
+  animation-name: wave;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes wave {
+  0%   {left:0px; top:0px;}
+  50%  {left:0px; top:50px;}
+  100% {left:0px; top:0px;}
+}
+/*end sóng*/
+footer {background-color: #A2EBE6;}
+#footer a{
+	color: #666;
+}
+#footer {line-height: 1.8em;}
+#footer a:hover {
+	color: #5CB1E3;
+	text-decoration: none;
+}

@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 996px) {
+    .preview {
+      margin-bottom: 20px; } }
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%; }
+    .preview-thumbnail.nav-tabs li img {
+      max-width: 100%;
+      display: block; }
+    .preview-thumbnail.nav-tabs li a {
+      padding: 0;
+      margin: 0; }
+    .preview-thumbnail.nav-tabs li:last-of-type {
+      margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s; }
+
+.card {
+  margin-top: 50px; border: none;
+}
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: bold; }
+
+.price span {
+  color: #ff9f1a; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+  .size:first-of-type {
+    margin-left: 40px; }
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px; }
+  .color:first-of-type {
+    margin-left: 20px; }
+
+.add-to-cart, .like {
+  background: #E9FFFD;
+  padding: 1.2em 1.5em;
+  border: solid 1px #A2EBE6;
+  color: #666;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease; }
+  .add-to-cart:hover, .like:hover {
+    background: #A2EBE6;
+    color: #666; }
+
+.not-available {
+  text-align: center;
+  line-height: 2em; }
+  .not-available:before {
+    font-family: fontawesome;
+    content: "\f00d";
+    color: #fff; }
+
+.orange {
+  background: #ff9f1a; }
+
+.green {
+  background: #85ad00; }
+
+.blue {
+  background: #0076ad; }
+
+.tooltip-inner {
+  padding: 1.3em; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+/* [1] zoom */
+.img-hover-zoom {
+  height: auto; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+/*mô tả*/
+.giam-gia {text-decoration:line-through}
+#mo-ta .section{padding: 0}
+#mo-ta .btn-minus{cursor:pointer;font-size:10px;display:flex;align-items:center;padding:5px;padding-left:15px;padding-right:15px;border:1px solid gray;border-radius:2px;border-right:0;}
+#mo-ta .btn-plus{cursor:pointer;font-size:10px;display:flex;align-items:center;padding:5px;padding-left:15px;padding-right:15px;border:1px solid gray;border-radius:2px;border-left:0;}
+.section > div {display:inline-flex;}
+.section > div > input {margin:0;padding-left:5px;font-size:14px;padding-right:5px;max-width:55px;text-align:center;}
+.attr{cursor:pointer;margin-right:13px;height:35px;font-size:10px;padding:2px;border-radius:2px;border:1px solid #E4E4E4;}
+.attr2{cursor:pointer;height:35px; font-size:16px;padding:3px;border:1px solid gray;border-radius:2px;}
+.attr.active,.attr2.active{ border:1px solid red;}
+.action button {
+	width: 210px; height: 70px;
+	font-size: 16px;
+	font-family: 'Baloo', cursive;
+}
+
+
+
+@media (max-width: 426px) {
+    .container {margin-top:0px !important;}
+    .container > .row{padding:0 !important;}
+    .container > .row > .col-xs-12.col-sm-5{
+        padding-right:0 ;    
+    }
+    .container > .row > .col-xs-12.col-sm-9 > div > p{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+    .container > .row > .col-xs-12.col-sm-9 > div > ul{
+        padding-left:10px !important;
+        
+    }            
+    .section{width:104%;}
+    .menu-items{padding-left:0;}
+}
+/*tab*/
+.project-tab {
+    padding: 10%;
+    margin-top: -8%;
+}
+.project-tab #tabs{
+    background: #007b5e;
+    color: #eee;
+}
+.project-tab #tabs h6.section-title{
+    color: #000;
+}
+#nav-tab a {font-size: 20px; color:#666;}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #666;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid #A2EBE6 !important;
+}
+.project-tab .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #666;
+}
+.project-tab .nav-link:hover {
+    border: none;
+}
+.project-tab thead{
+    background: #f3f3f3;
+    color: #666;
+}
+.project-tab a{
+    text-decoration: none;
+    color: #666;
+}
+
+#coment button {
+	width: 280px; height: 55px;
+	font-size: 15px;
+	font-family: 'Baloo', cursive;
+	text-align: center
+}
+#myModal button {
+	width: 195px; height: 45px;
+	font-size: 15px;
+	font-family: 'Baloo', cursive;
+	text-align: center
+}
+#myModal .modal-content {text-align: left}
+.modal-header{text-align: left; width: 90%; margin-left: 0; border: none}
+.modal-body,.modal-footer {border: none}
+.modal-header button {width: 10%}
+/*add image*/
+.images {
+  display: flex;
+  flex-wrap:  wrap;
+  margin-top: 20px;
+}
+.images .img,
+.images .pic {
+  flex-basis: 31%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.images .img {
+  width: 112px;
+  height: 93px;
+  background-size: cover;
+  margin-right: 10px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.images .img:nth-child(3n) {
+  margin-right: 0;
+}
+.images .img span {
+  display: none;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.images .img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  transition: opacity .1s ease-in;
+  border-radius: 4px;
+  opacity: 0;
+  position: absolute;
+}
+.images .img:hover::after {
+  display: block;
+  background-color: #000;
+  opacity: .5;
+}
+.images .img:hover span {
+  display: block;
+  color: #fff;
+}
+.images .pic {
+  background-color: #F5F7FA;
+  align-self: center;
+  text-align: center;
+  padding: 40px 0;
+  text-transform: uppercase;
+  color: #848EA1;
+  font-size: 12px;
+  cursor: pointer;
+}
+/*add image*/
+
+
+/*rate star*/
+#rating-block h3 {color: #FFD600; font-size: 32px}
+#rating-block h3 span {color: #FFD600; font-size: 16px}
+#rating-block .stars {font-size:20px}
+@media (max-width: 576px) {
+	#rating-block h3 {color: #FFD600; font-size: 24px}
+	#rating-block h3 span {color: #FFD600; font-size: 14px}
+	#rating-block .stars {font-size:10px}
+	#nav-tab a {font-size: 14px; color:#666;}
+	.action button {
+	width: 160px; height: 50px;
+	font-size: 14px;
+	font-family: 'Baloo', cursive;
+	padding: 5px
+}
+	
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+/*sản phẩm tương tự*/
+	  /*------------- khoa hoc slider----------*/
+#sp-slider .owl-nav .owl-prev,
+#sp-slider .owl-nav .owl-next{ font-size:60px}
+#sp-slider .owl-nav .owl-prev{ position:absolute; left:-20px; top:30%; background:#FF8C93;color:white}
+#sp-slider .owl-nav .owl-next{ position:absolute; right:-20px; top:30%;background:#FF8C93;color:white}
+#sp-slider .owl-nav .owl-prev:hover,#sp-slider .owl-nav .owl-next:hover{ background:#A2EBE6}
